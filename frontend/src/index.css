@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  @apply bg-orange-50 text-dark-900;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-400 rounded-full;
+}
+
+.btn-primary {
+  @apply bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-200 shadow-md hover:shadow-lg active:scale-95;
+}
+
+.btn-outline {
+  @apply border-2 border-brand-500 text-brand-600 hover:bg-brand-500 hover:text-white font-semibold px-5 py-2.5 rounded-full transition-all duration-200;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300;
+}
